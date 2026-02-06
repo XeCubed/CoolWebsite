@@ -1,0 +1,130 @@
+body {
+    background-color:cornflowerblue;
+    color: white;
+    font-family: tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: white;
+   -webkit-text-stroke: 3px black;     
+   font-size: 50px;
+   margin-bottom: 1px;
+}
+
+p {
+    color: lightblue;
+    text-shadow:
+    2px 2px 0 black,
+    -2px 2px 0 black,
+    2px -2px 0 black,
+    -2px -2px 0 black,
+    2px 0 0 black,
+    -2px 0 0 black,
+    0 2px 0 black,
+    0 -2px 0 black;
+    font-size: 20px; 
+    line-height: 1.5;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+button {
+    padding: 38px 8px;
+    font-size: 2px;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: black;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transition: all 0.1 ease-in-out;
+    font-weight:600;
+}
+
+#btn0 {
+    position: relative;
+    top: 0;
+    left: 50px;
+}
+
+#btn1 {
+    background-color: rgb(211, 107, 150);
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 18px;
+    position: relative;
+    top: -100px;
+    left: -500px;
+}
+
+#btn0:hover {
+    background-color: rgb(147, 57, 57);
+}
+
+#btn1:hover {
+    background-color: rgb(151, 51, 81);
+}
+
+button:hover {
+    background-color: rgb(147, 57, 57);
+    border: 2px solid white;
+    color: grey
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+img {
+    display: none;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-top: 6px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 300px;
+    height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+    background-color: rgb(39, 16, 10);
+    color: black;
+    }
+
+    h1, h2, h3 {
+        color: black;
+       -webkit-text-stroke: 3px rgb(172, 145, 109);     
+    }
+
+    p {
+        color: rgb(136, 92, 92);
+    }
+
+    #btn0 {
+        background-color: rgb(172, 63, 63);
+        color: lightgray;
+    }
+
+    #btn1 {
+        background-color: rgb(149, 56, 95);
+        color: lightgray;
+    }
+    
+    #btn0:hover {
+        background-color: rgb(105, 31, 31);
+    }
+
+    #btn1:hover {
+        background-color: rgb(108, 31, 63);
+    }
+    
+    img {
+        filter: brightness(76%);
+    }
+}
